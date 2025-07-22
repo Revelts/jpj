@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join Party Jakarta</title>
+  <link rel="icon" type="image/x-icon" href="./images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/loktar00/JQuery-Snowfall/jquery.snowfall.min.js"></script>
+
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="logo">
+      <img src="./images/logo.png" alt="Party Logo" />
+    </div>
+    <h1 class="title">JOIN PARTY JAKARTA</h1>
+    <a href="https://chat.whatsapp.com/DA5BcvxTeWGD932yHOrSKh?mode=ac_t" class="btn" target="_blank" rel="noopener noreferrer">
+    <img src="./images/logo.png" alt="icon" class="btn-icon" />
+    GROUP JOIN PARTY JAKARTA 1
+    </a>
+
+    <a href="https://chat.whatsapp.com/FMnyM1QbawKGYsKvblIGVq?mode=ac_t" class="btn" target="_blank" rel="noopener noreferrer">
+      <img src="./images/logo.png" alt="icon" class="btn-icon" />
+      GROUP JOIN PARTY JAKARTA 2
+    </a>
+
+    <a href="https://chat.whatsapp.com/Jzr2fzMHd435pTnmQqRBHy?mode=ac_t" class="btn" target="_blank" rel="noopener noreferrer">
+      <img src="./images/logo.png" alt="icon" class="btn-icon" />
+      GROUP JOIN HOSTINGAN JAKARTA 1
+    </a>
+
+    <a href="https://chat.whatsapp.com/CHha3ncsSL8AI2B3NP2rmK?mode=ac_t" class="btn" target="_blank" rel="noopener noreferrer">
+      <img src="./images/logo.png" alt="icon" class="btn-icon" />
+      GROUP JOIN HOSTINGAN JAKARTA 2
+    </a>
+
+    <a href="https://chat.whatsapp.com/GMk6vVrZ3453jkwM525tXT?mode=ac_t" class="btn" target="_blank" rel="noopener noreferrer">
+      <img src="./images/logo.png" alt="icon" class="btn-icon" />
+      GROUP JOIN PARTY TANGERANG
+    </a>
+
+    <a href="https://chat.whatsapp.com/FLiYN7RUxzZ9oSIxoPTdQ2?mode=ac_t" class="btn" target="_blank" rel="noopener noreferrer">
+      <img src="./images/logo.png" alt="icon" class="btn-icon" />
+      GROUP LADIES JOIN PARTY
+    </a>
+
+    <a href="https://chat.whatsapp.com/L9fdsMzElDTHFHT3YPyNC1?mode=ac_t" class="btn" target="_blank" rel="noopener noreferrer">
+      <img src="./images/logo.png" alt="icon" class="btn-icon" />
+      GROUP SARJANA X JOIN PARTY
+    </a>
+    <div class="footer">
+      © 2025 Jakarta Party
+    </div>
+  </div>
+  <script>
+  $(document).ready(function() {
+    $(document).snowfall({
+      flakeCount : 80,
+      maxSpeed : 5,
+      maxSize : 10
+    });
+  });
+  const snowflakeChars = ["❄", "❅", "❆"];
+  const snowflakeCount = 100;
+
+  for (let i = 0; i < snowflakeCount; i++) {
+    const flake = document.createElement("div");
+    flake.className = "snowflake";
+    flake.textContent = snowflakeChars[Math.floor(Math.random() * snowflakeChars.length)];
+    flake.style.left = Math.random() * 100 + "%";
+    flake.style.animationDuration = (5 + Math.random() * 5).toFixed(2) + "s";
+    flake.style.fontSize = (12 + Math.random() * 12).toFixed(2) + "px";
+    flake.style.opacity = (0.5 + Math.random() * 0.5).toFixed(2);
+    document.body.appendChild(flake);
+  }
+</script>
+</body>
+</html>
